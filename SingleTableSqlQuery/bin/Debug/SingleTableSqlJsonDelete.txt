@@ -1,0 +1,10 @@
+﻿{
+  "TableName":"Student",
+  "Operation":"Delete",
+  "Conditions":[{"Operator":"IN",
+                   "ColumnName":"Age",
+                   "ColumnValue":"30,32,37,33"},
+                   {"Operator":"EQUAL",
+                   "ColumnName":"Name",
+                   "ColumnValue":"Chandan"}]
+}

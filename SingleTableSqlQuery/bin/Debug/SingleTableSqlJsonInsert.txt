@@ -1,0 +1,11 @@
+﻿{
+  "TableName":"Student",
+  "Operation":"Insert",
+  "Columns":[{"Name":"FirstName","Value":"Chandan"},
+            {"Name":"MiddleName"},
+            {"Name":"LastName","Value":"Chandak"},
+            {"Name":"Age","Value":"37"},
+            {"Name":"Gender","Value":"Male"},
+            {"Name":"RollNumber","Value":"1"},
+            {"Name":"Class","Value":"10"}]
+}

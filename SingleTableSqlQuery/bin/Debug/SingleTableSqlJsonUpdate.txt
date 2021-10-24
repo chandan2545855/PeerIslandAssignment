@@ -1,0 +1,11 @@
+﻿{
+  "TableName":"Student",
+  "Operation":"Update",
+  "Columns":[{"Name":"Class","Value":"11"},{"Name":"RollNumber","Value":"2"}],
+  "Conditions":[{"Operator":"IN",
+                   "ColumnName":"Age",
+                   "ColumnValue":"30,32,37,33"},
+                   {"Operator":"EQUAL",
+                   "ColumnName":"Name",
+                   "ColumnValue":"Chandan"}]
+}

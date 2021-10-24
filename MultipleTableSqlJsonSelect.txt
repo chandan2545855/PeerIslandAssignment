@@ -1,0 +1,36 @@
+﻿{
+  "OperationName":"Select",  
+  "Columns":[{"Name":"FirstName","TableName":"Student"},
+                   {"Name":"SubjectName","TableName":"SubjectAllocation"},
+                   {"Name":"Class","TableName":"SubjectAllocation"}
+                  ],
+  "Join":[{"Type":"Inner Join",
+           "Conditions":[{"Operator":"=",
+                          "Columns":[{"Name":"Id","TableName":"Student","TableAlias":"stu"},
+                                     {"Name":"StudentId","TableName":"SubjectAllocation","TableAlias":"sa"},
+                                     {"Name":"FirstName","TableName":"Student","TableAlias":"stu"},
+                                     {"Name":"StudentName","TableName":"SubjectAllocation","TableAlias":"sa"},
+                                     {"Name":"Class","TableName":"Student","TableAlias":"stu"},
+                                     {"Name":"StudentClass","TableName":"SubjectAllocation","TableAlias":"sa"}
+                                    ]
+                          },
+                          {"Operator":"!=",
+                          "Columns":[{"Name":"SubjectId","TableName":"Student","TableAlias":"stu"},
+                                     {"Name":"ElectiveId","TableName":"SubjectAllocation","TableAlias":"sa"}
+                                    ]
+                          }]},
+           {"Type":"Left Join",
+           "Conditions":[{"Operator":"=",
+                          "Columns":[{"Name":"Id","TableName":"School","TableAlias":"school"},
+                                     {"Name":"SchoolId","TableName":"Student","TableAlias":"stu"}]
+                          }
+                          ]
+						  }],
+  "Conditions":[{"Operator":"Like",
+                 "Columns":[{"Name":"SchoolName","TableName":"School","Value":"St John school"},
+                             {"Name":"FirstName","TableName":"Student","Value":"Chandan"}
+                           ]},
+                 {"Operator":"In",
+                 "Columns":[{"Name":"Age","TableName":"Student","Value":"20,21,13,15"}
+                           ]}]
+}

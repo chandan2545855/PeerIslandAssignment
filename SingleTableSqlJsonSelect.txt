@@ -1,0 +1,17 @@
+﻿{
+  "TableName":"Student",
+  "Operation":"Select",
+  "Columns":[{"Name":"FirstName"},
+            {"Name":"MiddleName"},
+            {"Name":"LastName"},
+            {"Name":"Age"},
+            {"Name":"Gender"},
+            {"Name":"RollNumber"},
+            {"Name":"Class"}],
+  "Conditions":[{"Operator":"In",
+                   "ColumnName":"Age",
+                   "ColumnValue":"30,32,37,33"},
+                   {"Operator":"Equal",
+                   "ColumnName":"Name",
+                   "ColumnValue":"Chandan"}]
+}
